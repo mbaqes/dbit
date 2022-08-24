@@ -8,7 +8,9 @@
  ## Entity
 - User
 - Book
-- story
+- Story
+- Comment(not impl)
+- Rate(not impl)
  ------------------------------------------
  ## ORM
  this will updated when we add new models like **comments**
