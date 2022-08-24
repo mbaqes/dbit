@@ -25,7 +25,7 @@ graph TD;
 | `/register` | create new **User**  |
 | `/addstory` | create new **Book** with arry of **storie**  |
 | `/mystories` | return all **User**  **storie**  |  
-| `/mystories` | return all **stories**  | 
+| `/stories` | return all **stories**  | 
 
 #### login body
 ```json
@@ -58,6 +58,7 @@ graph TD;
 | Name | Description |
 | --- | --- |
 | User rate | Rare Book with 5 stars |
+| pagination | show books in pages with time created |
 | Books rate | View the highest rated book  |
 | Books Liks | View the highest liked book  |
 | comments | View comments for each book  |
