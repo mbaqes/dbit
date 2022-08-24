@@ -5,7 +5,13 @@
 - User
 - Book
 - storie
- 
+ ------------------------------------------
+ ```mermaid
+graph TD;
+    User-->Book;
+    Book-->storie;
+```
+-------------------------------------------
 | Route | Description |
 | --- | --- |
 | `login` | Log in the *User* to the system and give him unique key |
