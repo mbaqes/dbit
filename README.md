@@ -16,7 +16,8 @@
 graph TD;
     User-->Book1;
     User-->Book2;
-    User-->comments1
+    User2-->comments1
+     User3-->comments1
     Book1-->story1;
     Book1-->story2;
     Book2-->story3;
