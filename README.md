@@ -37,21 +37,21 @@ graph TD;
 
 ###### addstory 
 ```json
+{  
+"book":
 {
-
-    
-"book":{
-     "title" : "Moaz",
+    "title" : "Moaz",
     "body" : "storey and cool",
-   "stories":[ {
+    "stories":[ 
+ {
     "title" : "الخطوة الاولة ",
     "body" : "تحديد الاسلاسيات"
-    
-}, {
-    "title" : "second",
-    "body" : "second allasda"
-    
-}]
+},
+{
+    "title" : "الخطوة التانية",
+    "body" : "العودة الي الخطوة الاولة " 
+}
+]
 }
 }
 ```
