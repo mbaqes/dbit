@@ -18,14 +18,14 @@ graph TD;
     Book2-->storie4;
 ```
 -------------------------------------------
-## Route
+## Route api/
 | Route | Description |
 | --- | --- |
-| `login` | Log in the *User* to the system and give him unique key |
-| `register` | create new **User**  |
-| `addstory` | create new **Book** with arry of **storie**  |
-| `mystories` | return all **User**  **storie**  |  
-| `mystories` | return all **stories**  | 
+| `/login` | Log in the *User* to the system and give him unique key |
+| `/register` | create new **User**  |
+| `/addstory` | create new **Book** with arry of **storie**  |
+| `/mystories` | return all **User**  **storie**  |  
+| `/mystories` | return all **stories**  | 
 -------------------------------------------
 ## Start
 - php artisan passport:install
