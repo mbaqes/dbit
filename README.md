@@ -9,7 +9,10 @@
  ```mermaid
 graph TD;
     User-->Book;
-    Book-->storie;
+    Book1-->storie1;
+    Book1-->storie2;
+    Book2-->storie3;
+    Book2-->storie4;
 ```
 -------------------------------------------
 | Route | Description |
