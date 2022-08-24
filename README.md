@@ -63,6 +63,7 @@ graph TD;
 | comments | View comments for each book  |
 | websocket | websocket real time process  |
 | Rooms | Rooms foe stories |
+
 -------------------------------------------
 ## Start
 - php artisan passport:install
