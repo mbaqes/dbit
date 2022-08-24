@@ -26,7 +26,7 @@ graph TD;
     Book_2-->story_3;
     Book_2-->story_4;
     story_1-->comments_1;
-    story_1-->comments_2;
+    story_2-->comments_2;
    
 ```
 -------------------------------------------
