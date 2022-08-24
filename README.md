@@ -64,3 +64,14 @@ graph TD;
   <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
   <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
+-------------------------------------------
+## Next
+| Name | Description |
+| --- | --- |
+| User rate | Rare Book with 5 stars |
+| Books rate | View the highest rated book  |
+| Books Liks | View the highest liked book  |
+| comments | View comments for each book  |
+| websocket | websocket real time process  |
+| Rooms | Rooms foe stories |
+
