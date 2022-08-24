@@ -8,7 +8,8 @@
  ------------------------------------------
  ```mermaid
 graph TD;
-    User-->Book;
+    User-->Book1;
+    User-->Book2;
     Book1-->storie1;
     Book1-->storie2;
     Book2-->storie3;
