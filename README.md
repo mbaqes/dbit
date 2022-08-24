@@ -27,7 +27,7 @@ graph TD;
 | `/mystories` | return all **User**  **storie**  |  
 | `/mystories` | return all **stories**  | 
 
-#### login 
+#### login body
 ```json
 {
 "email" : "moaz@ali.com",
@@ -35,7 +35,8 @@ graph TD;
 }
 ```
 
-#### addstory 
+#### addstory body
+ 
 ```json
 {  
 "book":{
