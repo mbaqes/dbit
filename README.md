@@ -5,17 +5,17 @@
  ## Entitys
 - User
 - Book
-- storie
+- story
  ------------------------------------------
  ## ORM
  ```mermaid
 graph TD;
     User-->Book1;
     User-->Book2;
-    Book1-->storie1;
-    Book1-->storie2;
-    Book2-->storie3;
-    Book2-->storie4;
+    Book1-->story1;
+    Book1-->story2;
+    Book2-->story3;
+    Book2-->story4;
 ```
 -------------------------------------------
 ## Route api/
