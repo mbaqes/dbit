@@ -10,7 +10,8 @@
  ## ORM
  ```mermaid
 graph TD;
-    User-->Book1;
+    User-->| **Route** | Description |
+| --- | --- |;
     User-->Book2;
     Book1-->story1;
     Book1-->story2;
