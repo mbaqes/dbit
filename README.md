@@ -19,7 +19,7 @@ graph TD;
 ```
 -------------------------------------------
 ## Route api/
-| Route | Description |
+| **Route** | Description |
 | --- | --- |
 | `/login` | Log in the *User* to the system and give him unique key |
 | `/register` | create new **User**  |
@@ -55,15 +55,15 @@ graph TD;
 ```
 -------------------------------------------
 ## Next
-| Name | Description |
+| **Name** | Description |
 | --- | --- |
-| User rate | Rare Book with 5 stars |
-| pagination | show books in pages with time created |
-| Books rate | View the highest rated book  |
-| Books Liks | View the highest liked book  |
-| comments | View comments for each book  |
-| websocket | websocket real time process  |
-| Rooms | Rooms foe stories |
+| **User rate** | Rare Book with 5 stars |
+| **pagination** | show books in pages with time created |
+| **Books rate** | View the highest rated book  |
+| **Books Liks** | View the highest liked book  |
+| **comments** | View comments for each book  |
+| **websocket** | websocket real time process  |
+| **Rooms** | Rooms foe stories |
 
 -------------------------------------------
 ## Start
