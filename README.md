@@ -23,8 +23,8 @@ graph TD;
 | --- | --- |
 | `/login` | Log in the *User* to the system and give him unique key |
 | `/register` | create new **User**  |
-| `/addstory` | create new **Book** with arry of **storie**  |
-| `/mystories` | return all **User**  **storie**  |  
+| `/addstory` | create new **Book** with arry of **story**  |
+| `/mystories` | return all **User**  **stories**  |  
 | `/stories` | return all **stories**  | 
 
 #### login body
