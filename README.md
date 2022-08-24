@@ -16,17 +16,17 @@
  this will updated when we add new models like **comments**
  ```mermaid
 graph TD;
-    User-->Book1;
-    User-->Book2;
-     User-->comments1;
-    User2-->comments1
-    User3-->comments1
-    Book1-->story1;
-    Book1-->story2;
-    Book2-->story3;
-    Book2-->story4;
-    story1-->comments1;
-    story1-->comments2;
+    User_1-->Book_1;
+    User_1-->Book_2;
+    User_1-->comments_1;
+    User_2-->comments_1
+    User_3-->comments_1
+    Book_1-->story_1;
+    Book_1-->story_2;
+    Book_2-->story_3;
+    Book_2-->story_4;
+    story_1-->comments_1;
+    story_1-->comments_2;
    
 ```
 -------------------------------------------
