@@ -12,7 +12,7 @@
 --------------------------------------------
 | Route | Description |
 | --- | --- |
-| `login` | login *User* to system and give hime unique key |
+| `login` | Log in the *User* to the system and give him unique key |
 | `register` | create new **User**  |
 | `addstory` | create new **Book** with arry of **storie**  |
 | `mystories` | return all **User**  **storie**  |  
