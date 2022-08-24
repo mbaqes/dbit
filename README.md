@@ -26,6 +26,35 @@ graph TD;
 | `/addstory` | create new **Book** with arry of **storie**  |
 | `/mystories` | return all **User**  **storie**  |  
 | `/mystories` | return all **stories**  | 
+
+###### login 
+```json
+{
+"email" : "moaz@ali.com",
+"password" : "123456"
+}
+```
+
+###### addstory 
+```json
+{
+
+    
+"book":{
+     "title" : "Moaz",
+    "body" : "storey and cool",
+   "stories":[ {
+    "title" : "الخطوة الاولة ",
+    "body" : "تحديد الاسلاسيات"
+    
+}, {
+    "title" : "second",
+    "body" : "second allasda"
+    
+}]
+}
+}
+```
 -------------------------------------------
 ## Start
 - php artisan passport:install
