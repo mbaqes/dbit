@@ -16,13 +16,14 @@
 graph TD;
     User-->Book1;
     User-->Book2;
+    User-->comments1
     Book1-->story1;
     Book1-->story2;
     Book2-->story3;
     Book2-->story4;
      story1-->comments1;
      story1-->comments2;
-        User-->comments1;
+     User-->comments1;
 ```
 -------------------------------------------
 ## Route api/
