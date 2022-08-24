@@ -60,7 +60,7 @@ graph TD;
 ## Next
 | **Name** | Description |
 | --- | --- |
-| **User rate** | Rare Book with 5 stars |
+| **User rate** | Rate Book with 5 stars |
 | **pagination** | show books in pages with time created |
 | **Books rate** | View the highest rated book  |
 | **Books Liks** | View the highest liked book  |
