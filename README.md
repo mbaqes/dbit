@@ -30,7 +30,8 @@ graph TD;
 #### login body
 ```json
 {
-"email" : "moaz@ali.com",
+"email" : "moazali095@gmail.com
+",
 "password" : "123456"
 }
 ```
