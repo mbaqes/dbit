@@ -11,6 +11,7 @@
 - story
  ------------------------------------------
  ## ORM
+ this will updated when we add new models like **comments**
  ```mermaid
 graph TD;
     User-->Book1;
@@ -19,6 +20,9 @@ graph TD;
     Book1-->story2;
     Book2-->story3;
     Book2-->story4;
+     story1-->comments1;
+     story1-->comments2;
+        User-->comments1;
 ```
 -------------------------------------------
 ## Route api/
