@@ -14,17 +14,18 @@
  this will updated when we add new models like **comments**
  ```mermaid
 graph TD;
-    User-->Book1;
-    User-->Book2;
-    User2-->comments1
-     User3-->comments1
-    Book1-->story1;
-    Book1-->story2;
-    Book2-->story3;
-    Book2-->story4;
-     story1-->comments1;
-     story1-->comments2;
-     User-->comments1;
+    User-->Book 1;
+    User-->Book 2;
+     User-->comments 1;
+    User 2-->comments 1
+    User 3-->comments 1
+    Book 1-->story 1;
+    Book 1-->story 2;
+    Book 2-->story 3;
+    Book 2-->story 4;
+    story 1-->comments 1;
+    story 1-->comments 2;
+   
 ```
 -------------------------------------------
 ## Route api/
