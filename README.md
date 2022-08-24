@@ -13,7 +13,7 @@
 - Rate(not impl)
  ------------------------------------------
  ## ORM
- this will updated when we add new models like **comments**
+ this will updated when we add new models like **Comments,Rate,Like**
  ```mermaid
 graph TD;
     User_1-->Book_1;
@@ -72,7 +72,7 @@ graph TD;
 | **User rate** | Rate Book with 5 stars |
 | **pagination** | show books in pages with time created |
 | **Books rate** | View the highest rated book  |
-| **Books Liks** | View the highest liked book  |
+| **Books Likes** | View the highest liked book  |
 | **comments** | View comments for each book  |
 | **websocket** | websocket real time process  |
 | **Rooms** | Rooms foe stories |
