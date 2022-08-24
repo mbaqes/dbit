@@ -5,11 +5,7 @@
 - User
 - Book
 - storie
---------------------------------------------
-1. User
-   - Book
-     - storie
---------------------------------------------
+ 
 | Route | Description |
 | --- | --- |
 | `login` | Log in the *User* to the system and give him unique key |
