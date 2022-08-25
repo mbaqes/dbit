@@ -9,7 +9,7 @@
 - User
 - Book
 - Story
-- Comment(not impl)
+- Comment
 - Rate(not impl)
  ------------------------------------------
  ## ORM
