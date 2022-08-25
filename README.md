@@ -41,10 +41,10 @@ graph TD;
 | `/stories` | return all **stories**  | 
 | `/comment` | add   **comment** to **story**  | 
 
+ ------------------------------------------
 #### login body
-| **Route** | 
-| --- |
-| /login | 
+ **Route** /login
+  
 ```json
 {
 "email" : "moazali095@gmail.com",
@@ -52,10 +52,10 @@ graph TD;
 }
 ```
 
+ ------------------------------------------
 #### addstory body
- | **Route** | Description |
-| --- | --- |
-| /addstory | --- |
+  **Route**  /addstory 
+ 
 ```json
 {  
 "book":{
@@ -72,10 +72,10 @@ graph TD;
                }
 ]}}
 ```
+ ------------------------------------------
 #### add **Commet** body
-  | **Route** | Description |
-| --- | --- |
-| /comment | --- |
+   **Route** /comment
+ 
 ```json
 {
     "storyID" :4,
