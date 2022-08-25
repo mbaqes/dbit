@@ -9,7 +9,7 @@
 - User
 - Book
 - Story
-- Comment(not impl)
+- Comment
 - Rate(not impl)
  ------------------------------------------
  ## ORM
@@ -41,15 +41,32 @@ graph TD;
 | `/stories` | return all **stories**  | 
 | `/comment` | add   **comment** to **story**  | 
 
+ ------------------------------------------
+ #### register body
+ **Route** /register
+  
+```json
+
+{
+    "name":"moaz",
+    "email" : "moazali095@gmail.com",
+    "password" : "123456",
+    "password_confirmation":"123456"
+}
+```
+ ------------------------------------------
 #### login body
+ **Route** /login
+  
 ```json
 {
 "email" : "moazali095@gmail.com",
 "password" : "123456"
 }
 ```
-
+ ------------------------------------------
 #### addstory body
+  **Route**  /addstory 
  
 ```json
 {  
@@ -67,7 +84,9 @@ graph TD;
                }
 ]}}
 ```
+ ------------------------------------------
 #### add **Commet** body
+   **Route** /comment
  
 ```json
 {
