@@ -5,14 +5,17 @@ namespace App\Http\Controllers\Book;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use App\Book;
 use App\Story;
 use App\Storyerror;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Resources\BookResource;
+use Exception;
+
 class BookController extends Controller
 {
 
@@ -87,7 +90,7 @@ class BookController extends Controller
                     ->json([ "storis"=>$errors ])
                     ->setStatusCode(400);
             }
-        }catch(Exception $e) {
+        }catch( Exception $e) {
             return response()
             ->json( 'Message: ' .$e->getMessage())
             ->setStatusCode(400);

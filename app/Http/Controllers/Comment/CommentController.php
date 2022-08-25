@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Comment;
 
 use App\Comment;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 class CommentController extends Controller
 {
@@ -33,10 +35,11 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function comment(Request $request)
     {
+        
         $validator = Validator::make($request->all(), [
-            'storyID' => 'required|string=',
+            'storyID' => 'required',
             'body' => 'required|string',
            
         ]);
@@ -44,8 +47,11 @@ class CommentController extends Controller
         {
             return response(['errors'=>$validator->errors()->all()], 422);
         }
-       // $user = User::create($request->toArray());
-       $commet = Comment::create(['body' => 'A new comment.', ]);
+        // return response(['errors'=>Auth::guard('api')->user()->id], 422);
+        //'body','user_id','story_id',
+      $userid = Auth::guard('api')->user()->id;
+      $commet = Comment::create(['body' => $request->body,'user_id'=> $userid,'story_id' => $request->storyID]);
+      return response(['commet'=> $commet], 200);
        
     }
 

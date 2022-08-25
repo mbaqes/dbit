@@ -22,6 +22,7 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/addstory', 'Book\BookController@addstory')->name('addstory.api');
     Route::get('/mystories', 'Book\BookController@mystories')->name('mystories.api');
     Route::get('/stories', 'Book\BookController@stories')->name('stories.api');
+    Route::get('/comment', 'Comment\CommentController@comment')->name('store.api');
     
 });
 Route::group(['middleware' => ['cors', 'json.response']], function () {
