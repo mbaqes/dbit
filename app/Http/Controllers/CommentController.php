@@ -34,7 +34,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'storyID' => 'required|string=',
+            'body' => 'required|string',
+           
+        ]);
+        if ($validator->fails())
+        {
+            return response(['errors'=>$validator->errors()->all()], 422);
+        }
     }
 
     /**
