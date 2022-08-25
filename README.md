@@ -42,9 +42,9 @@ graph TD;
 | `/comment` | add   **comment** to **story**  | 
 
 #### login body
-| **Route** | Description |
-| --- | --- |
-| /login | --- |
+| **Route** | 
+| --- |
+| /login | 
 ```json
 {
 "email" : "moazali095@gmail.com",
