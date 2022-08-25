@@ -42,6 +42,19 @@ graph TD;
 | `/comment` | add   **comment** to **story**  | 
 
  ------------------------------------------
+ #### register body
+ **Route** /register
+  
+```json
+
+{
+    "name":"moaz",
+    "email" : "moaz@ali.com",
+    "password" : "123456",
+    "password_confirmation":"123456"
+}
+```
+ ------------------------------------------
 #### login body
  **Route** /login
   
@@ -51,7 +64,6 @@ graph TD;
 "password" : "123456"
 }
 ```
-
  ------------------------------------------
 #### addstory body
   **Route**  /addstory 
