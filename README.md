@@ -42,6 +42,9 @@ graph TD;
 | `/comment` | add   **comment** to **story**  | 
 
 #### login body
+| **Route** | Description |
+| --- | --- |
+| /login | --- |
 ```json
 {
 "email" : "moazali095@gmail.com",
@@ -50,7 +53,9 @@ graph TD;
 ```
 
 #### addstory body
- 
+ | **Route** | Description |
+| --- | --- |
+| /addstory | --- |
 ```json
 {  
 "book":{
@@ -68,7 +73,9 @@ graph TD;
 ]}}
 ```
 #### add **Commet** body
- 
+  | **Route** | Description |
+| --- | --- |
+| /comment | --- |
 ```json
 {
     "storyID" :4,
