@@ -47,8 +47,7 @@ class CommentController extends Controller
         {
             return response(['errors'=>$validator->errors()->all()], 422);
         }
-        // return response(['errors'=>Auth::guard('api')->user()->id], 422);
-        //'body','user_id','story_id',
+        
       $userid = Auth::guard('api')->user()->id;
       $commet = Comment::create(['body' => $request->body,'user_id'=> $userid,'story_id' => $request->storyID]);
       return response(['commet'=> $commet], 200);
