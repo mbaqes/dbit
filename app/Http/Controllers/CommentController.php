@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Validator;
 class CommentController extends Controller
 {
     /**
@@ -43,6 +44,9 @@ class CommentController extends Controller
         {
             return response(['errors'=>$validator->errors()->all()], 422);
         }
+       // $user = User::create($request->toArray());
+       $commet = Comment::create(['body' => 'A new comment.', ]);
+       
     }
 
     /**
