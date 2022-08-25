@@ -24,32 +24,7 @@ class BookController extends Controller
         $body = $request->all();
         $bookrequst = $body['book'];
         $storys = $bookrequst['stories'];
-       // $errorstory = array();
-    //     $bookerror = array("fgfgd");
-    //     $books = new Book;
-    //     $storyserror = new Story;
-    //     $errors = collect([]);
-    //     $bookserror = collect([]);
-    //     foreach($storys as $key=>$value) {
-    //         if ( $storys[$key]['body']==null) {
-    //             $storyserror->body='mustnot noll';
-    //             $errors->push($storyserror);
-    //         } 
-    //     }
-    //     $books->stories =$errors;
-    //     $errors->push($book);
-    //   //   $errors->push($storyserror);
-    //    // $bodyObj = array_merge($book, $errors);
-    //     return response()
-    //     ->json([ 'errors' => $errors ])
-    //     ->setStatusCode(400);
-      //  $bodyObj = array_merge($book, $storys);
-        // $rules = [
-        // 'title' => 'required',
-        // 'body' => 'required',
-        //     'storys.*.title' => 'required',
-        //     'storys.*.body' => 'required',
-        // ];
+     
         $rules = [
             'title' => 'required',
             'body' => 'required',
@@ -61,19 +36,13 @@ class BookController extends Controller
                   
                 ];
                 try {
-              //  $validator = Validator::make($book, $rules);
-               
+           
                 $errors = collect([]);
                 $i = 0;
                 foreach( $storys as $key=>$value) {
                     $errorstorys = new Storyerror;
                    
-                //    if($i==2){
-                //     $index = $storys[$i];
-                //     return response()
-                //     ->json([ 'book' => $index])
-                //     ->setStatusCode(400);
-                //    }
+          
                             $validators =  Validator::make($storys[$i], $rulesstory);
                            if ($validators->fails()) {
                             $errorstorys->id=$i;
@@ -83,8 +52,7 @@ class BookController extends Controller
                            $i++;  
                         }
 
-          //  $validators = Validator::make($storys, $rulesstory);
-           // $bodyObjv = array_merge($validator, $validators);
+         
             if ($validators->fails()) {
                 return response()
                     ->json([ "storis"=>$errors ])
@@ -100,10 +68,9 @@ class BookController extends Controller
         $book->user_id = $request->user()->id;
         $book->title = $bookrequst['title'];
         $book->body = $bookrequst['body'];
-      //  $book->stories=$bookrequst['stories'];
-        
+    
         $book->save();
-        $green_foods = Book::where('user_id',  $request->user()->id)->get();
+        $result = Book::where('user_id',  $request->user()->id)->get();
         $i = 0;
         foreach( $storys as $key=>$value) {
             $story = new Story;
@@ -113,19 +80,19 @@ class BookController extends Controller
             $story->save();
             $i++; 
         }
-//return response($green_foods,200);
+ 
         $response =new BookResource($book);
         return response($response, 200);
     }
     public function mystories (Request $request) {
-        $green_foods = Book::with(['stories'])->where('user_id',Auth::user()->id)->get();
-     //   $response =new BookResource($green_foods);
-        return response($green_foods, 200);
+        $result = Book::with(['stories'])->where('user_id',Auth::user()->id)->get();
+  
+        return response($result, 200);
     }
     public function stories (Request $request) {
-        $green_foods = Book::with(['stories'])->get();
-     //   $response =new BookResource($green_foods);
-        return response($green_foods, 200);
+        $result = Book::with(['stories'])->get();
+    
+        return response($result, 200);
     }
     //
 }
