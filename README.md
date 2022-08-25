@@ -39,6 +39,7 @@ graph TD;
 | `/addstory` | create new **Book** with arry of **story**  |
 | `/mystories` | return all **User**  **stories**  |  
 | `/stories` | return all **stories**  | 
+| `/comment` | add   **comment** to **story**  | 
 
 #### login body
 ```json
