@@ -4,14 +4,14 @@ namespace App\Http\Controllers\Book;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\User;
+use App\Model\User;
 
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use App\Book;
-use App\Story;
-use App\Storyerror;
+use App\Model\Book;
+use App\Model\Story;
+use App\Model\Storyerror;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Resources\BookResource;
 use Exception;
