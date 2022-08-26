@@ -4,7 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Model\User;
-use App\Story;
+use App\Model\Story;
 class Comment extends Model
 {
     /**

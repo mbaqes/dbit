@@ -3,7 +3,7 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Book;
+use App\Model\Book;
 class Story extends Model
 {
     protected $fillable = [

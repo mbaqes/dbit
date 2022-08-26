@@ -41,8 +41,6 @@ class BookController extends Controller
                 $i = 0;
                 foreach( $storys as $key=>$value) {
                     $errorstorys = new Storyerror;
-                   
-          
                             $validators =  Validator::make($storys[$i], $rulesstory);
                            if ($validators->fails()) {
                             $errorstorys->id=$i;

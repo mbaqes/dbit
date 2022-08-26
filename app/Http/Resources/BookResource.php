@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\Story;
+use App\Model\Story;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use App\Http\Resources\StoryResource;
 class BookResource extends JsonResource
