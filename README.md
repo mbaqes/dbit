@@ -34,10 +34,10 @@ graph TD;
  ## Websockets 
  ```mermaid
 graph TD;
-    Server-->New Book Feed;
-    New Book Feed-->Server;
-    client_1-->New Book Feed;
-    client_2-->New Book Feed;
+    Server-->New_Book_Feed;
+    New_Book_Feed-->Server;
+    client_1-->New_Book_Feed;
+    client_2-->New_Book_Feed;
  ```
    
 -------------------------------------------
