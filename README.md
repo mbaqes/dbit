@@ -30,6 +30,16 @@ graph TD;
     story_2-->comments_2;
    
 ```
+ ------------------------------------------
+ ## Websockets 
+ ```mermaid
+graph TD;
+    Server-->client_1;
+    Server-->client_2;
+    client_1-->Server;
+    client_2-->Server;
+ ```
+   
 -------------------------------------------
 ## Route api/
 | **Route** | Description |
