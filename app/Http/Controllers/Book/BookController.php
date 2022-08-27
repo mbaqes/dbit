@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Book;
 
+use App\Events\NewBook;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Model\User;
@@ -84,12 +85,13 @@ class BookController extends Controller
     }
     public function mystories (Request $request) {
         $result = Book::with(['stories'])->where('user_id',Auth::user()->id)->get();
-  
+        event(new \App\Events\NewBook($request->message));
         return response($result, 200);
     }
     public function stories (Request $request) {
         $result = Book::with(['stories'])->get();
-    
+        event(new \App\Events\NewBook($request."asdfasdfasdfasdfasdf"));
+        
         return response($result, 200);
     }
     //
