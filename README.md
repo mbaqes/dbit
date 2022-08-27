@@ -32,6 +32,9 @@ graph TD;
 ```
  ------------------------------------------
  ## Websockets 
+  # channels
+  - public(New Book feed)
+  - private(New comment)
  ```mermaid
 graph TD;
     Server-->New_Book_Feed;
