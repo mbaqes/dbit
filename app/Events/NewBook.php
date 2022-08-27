@@ -13,15 +13,15 @@ use Illuminate\Queue\SerializesModels;
 class NewBook implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-
+    public $data_;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+       $this->data_= $data;
     }
 
     /**
@@ -33,6 +33,14 @@ class NewBook implements ShouldBroadcast
     {
         return new PrivateChannel('newbook');
     }
-    
+    /**
+ * Get the data to broadcast.
+ *
+ * @return array
+ */
+public function broadcastWith()
+{
+    return ['id' => $this->data_];
+}
     
 }
