@@ -30,6 +30,21 @@ graph TD;
     story_2-->comments_2;
    
 ```
+ ------------------------------------------
+ ## Websockets 
+  ### channels
+  - public(New Book feed)
+  - private(New comment)
+ ```mermaid
+graph TD;
+    Server-->New_Book_Feed;
+    New_Book_Feed-->Server;
+    client_1-->New_Book_Feed;
+    client_2-->New_Book_Feed;
+    New_Book_Feed-->client_1;
+    New_Book_Feed-->client_2;
+ ```
+   
 -------------------------------------------
 ## Route api/
 | **Route** | Description |
