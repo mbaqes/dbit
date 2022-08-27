@@ -38,6 +38,8 @@ graph TD;
     New_Book_Feed-->Server;
     client_1-->New_Book_Feed;
     client_2-->New_Book_Feed;
+    New_Book_Feed-->client_1;
+    New_Book_Feed-->client_2;
  ```
    
 -------------------------------------------
