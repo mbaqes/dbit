@@ -120,6 +120,7 @@ graph TD;
 | **comments** | View comments for each book  |
 | **websocket** | websocket real time process  |
 | **Rooms** | Rooms foe stories |
+| **Listener** | **Listener**  for Event(New Book) |
 
 -------------------------------------------
 ## Start
