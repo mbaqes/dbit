@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 Route::middleware('auth:api')->prefix('book') ->group(function () {
     Route::post('/logout', 'Auth\ApiAuthController@logout')->name('logout.api');
     Route::post('/addstory', 'Book\BookController@addstory')->name('addstory.api');

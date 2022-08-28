@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 Route::group(['middleware' => ['cors', 'json.response']], function () {
     // ...
     Route::post('/gets', 'Auth\ApiAuthController@gets')->name('gets.api');
