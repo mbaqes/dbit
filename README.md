@@ -35,6 +35,12 @@ graph TD;
   ### channels
   - public(New Book feed)
   - private(New comment)
+  ### Events
+  - NewBook
+  - BookComment
+  ### Listener
+  - New Book Feed ** Event ( NewBook ) **
+  - New Comments  ** Event ( BookComment ) **
  ```mermaid
 graph TD;
     Server-->New_Book_Feed;
