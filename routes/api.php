@@ -14,15 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
  // our routes to be protected will go in here
- require __DIR__ . '/Api/RouteBook.php';
- require __DIR__ . '/Api/RouteComment.php';
+ 
+Route::prefix('v1') -> group( function () {
+    // ...
+    require __DIR__ . '/Api/v1/RouteAuth.php';
+    require __DIR__ . '/Api/v1/RouteBook.php';
+    require __DIR__ . '/Api/v1/RouteComment.php';
+    // ...
+});
 // public routes
-// Route::group(['middleware' => ['cors', 'json.response']], function () {
-//     // ...
-//     Route::post('/gets', 'Auth\ApiAuthController@gets')->name('gets.api');
-    
-//     Route::post('/login', 'Auth\ApiAuthController@login')->name('login.api');
-//     Route::post('/register', 'Auth\ApiAuthController@register')->name('register.api');
-//     // ...
-// });
+
 
