@@ -50,7 +50,7 @@ graph TD;
     New_Book_Feed-->client_1;
     New_Book_Feed-->client_2;
  ```
-    ------------------------------------------
+ ------------------------------------------
  ## Exception Handler 
 - User Exception
 - Book Exception
