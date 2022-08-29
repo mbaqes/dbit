@@ -57,7 +57,7 @@ graph TD;
 - Story Exception
 - Comment Exception
 -------------------------------------------
-## Route api/
+## Route api/**V1**
 | **Route** | Description |
 | --- | --- |
 | `/login` | Log in the *User* to the system and give him unique key |
