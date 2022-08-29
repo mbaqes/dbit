@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use App\Model\Book;
+use App\Model\Comment;
 class User extends Authenticatable
 {
     
@@ -41,5 +42,9 @@ class User extends Authenticatable
     public function books()
     {
         return $this->hasMany(Book::class);
+    }
+    public function comments() 
+    {
+        return $this->hasMany(Comment::class);
     }
 }

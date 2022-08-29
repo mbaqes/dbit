@@ -22,6 +22,6 @@ Route::prefix('v1') -> group( function () {
     require __DIR__ . '/Api/v1/RouteComment.php';
     // ...
 });
-// public routes
+
 
 

@@ -15,9 +15,9 @@ class Comment extends Model
     protected $fillable = [
         'id', 'body','user_id','story_id',
     ];
-    public function users()
+    public function user()
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
     public function story()
     {
