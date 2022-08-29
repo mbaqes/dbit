@@ -35,6 +35,12 @@ graph TD;
   ### channels
   - public(New Book feed)
   - private(New comment)
+  ### Events
+  - NewBook
+  - BookComment
+  ### Listener
+  - New Book Feed **Event ( NewBook )**
+  - New Comments  **Event ( BookComment )**
  ```mermaid
 graph TD;
     Server-->New_Book_Feed;
@@ -44,7 +50,12 @@ graph TD;
     New_Book_Feed-->client_1;
     New_Book_Feed-->client_2;
  ```
-   
+ ------------------------------------------
+ ## Exception Handler 
+- User Exception
+- Book Exception
+- Story Exception
+- Comment Exception
 -------------------------------------------
 ## Route api/
 | **Route** | Description |
@@ -120,12 +131,15 @@ graph TD;
 | **comments** | View comments for each book  |
 | **websocket** | websocket real time process  |
 | **Rooms** | Rooms foe stories |
+| **Listener** | **Listener**  for Event(New Book) |
 
 -------------------------------------------
 ## Start
 - php artisan passport:install
 - php artisan migrate
+- php artisan passport:keys
 - php artisan serve
+
 <div style="text-align:center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
