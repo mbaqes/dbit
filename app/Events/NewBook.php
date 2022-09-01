@@ -31,7 +31,7 @@ class NewBook implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('newbook');
+        return new Channel('newbook');
     }
     /**
  * Get the data to broadcast.
@@ -40,7 +40,8 @@ class NewBook implements ShouldBroadcast
  */
 public function broadcastWith()
 {
-    return ['id' => $this->data_];
+   // return ['id' => $this->data_];
+   return ["Data"=> $this->data_ ];
 }
     
 }

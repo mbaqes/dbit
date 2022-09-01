@@ -3,10 +3,10 @@
 namespace App\Http\Repository;
 use Kutia\Larafirebase\Facades\Larafirebase;
  
-use App\Interfaces\NotificationRepositoryInterface;
+use App\Interfaces\INotificationRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Model\User;
-class NotificationRepository implements NotificationRepositoryInterface 
+class NotificationRepository implements INotificationRepositoryInterface 
 {
     public function storeToken(Request $request){
         // try{

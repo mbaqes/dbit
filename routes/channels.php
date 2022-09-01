@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Broadcast;
 */
 
 Broadcast::channel('newbook', function ($user, $id) {
+    dd("asdadsa");
     return (int) $user->id === (int) $id;
 });
-Broadcast::channel('newbook', function ($user, $orderId) {
-    return "kdfsadfkaldskflaksdfalsd";
-});
+// Broadcast::channel('newbook', function ($user, $orderId) {
+//     return "kdfsadfkaldskflaksdfalsd";
+// });
